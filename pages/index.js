@@ -1,13 +1,14 @@
+import React from 'react';
 import Head from 'next/head';
 
 function Home() {
 	return (
-		<div>
+		<React.Fragment>
 			<Head>
 				<title>Custom Page Title</title>
 			</Head>
 			<div>Welcome to Next.js!</div>
-		</div>
+		</React.Fragment>
 	);
 }
 
