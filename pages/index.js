@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import { css } from '@emotion/core';
 
 const headerStyles = css`
@@ -16,6 +17,9 @@ function Home() {
 				<title>Custom Page Title</title>
 			</Head>
 			<h1 css={headerStyles}>Welcome to Next.js!</h1>
+			<Link href="/about">
+				<a>About Page</a>
+			</Link>
 		</React.Fragment>
 	);
 }
