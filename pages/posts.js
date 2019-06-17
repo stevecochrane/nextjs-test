@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class extends React.Component {
+class Posts extends React.Component {
 	static getInitialProps({ query: { id } }) {
 		return { postId: id };
 	}
@@ -13,3 +14,9 @@ export default class extends React.Component {
 		);
 	}
 };
+
+Posts.propTypes = {
+	postId: PropTypes.string
+};
+
+export default Posts;
