@@ -6,5 +6,5 @@ Just trying out some things with [Next.js](https://nextjs.org).
 - [x] Add a second page to link to and from the homepage
 - [x] Pull in API data to render a page
 - [ ] Dynamic routing to test blog posts
-- [ ] Server-side rendering with Express
+- [x] Server-side rendering with Express
 - [ ] Static page generation for hosting on CDN
