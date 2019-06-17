@@ -11,8 +11,12 @@ app.prepare().then(() => {
 	const server = express();
 	server.use(compression());
 
+	server.get('/posts/:id', (req, res) => {
+		return app.render(req, res, '/posts', { id: req.params.id });
+	});
+
 	server.get('*', (req, res) => {
-		return handle(req, res)
+		return handle(req, res);
 	});
 
 	server.listen(port, err => {
